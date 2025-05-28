@@ -1,0 +1,597 @@
+/* Seu CSS atual */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+
+}
+:root{
+    /*hero*/
+    --cor-texto-hero:#E5E5E5;
+    --gradient-hero:#E69A7A #693600; 
+    --cor-btn-hero:#6A3B28;
+    --btn-radios-hero:15px;
+    /*sobre-mim*/
+    /* Hard Skills: Mantendo os tamanhos que você definiu e que funcionaram bem */
+    --width-box-hardskils:220px; 
+    --height-box-hardskils:240px; 
+
+    /* Soft Skills: Ajustado para o mesmo padrão das Hard Skills */
+    --width-box-softskils:440px; /* Mesma largura das hard skills para consistência */
+    --height-box-softskils:380px; /* Mesma altura das hard skills para consistência */
+
+    --hover-w-hard:240px; 
+    --hover-h-hard:295px; 
+    --img-softskils:80px; 
+    --color-experiente:#3A8F25;
+    --color-intermediario:#EABA76;
+    --color-basico:#5E9DD2;
+    --color-skils:#693018;
+    --color-tl-sobre-mim:#A96548;
+    /* Novo: Cor principal, pode ser útil */
+    --cor-principal: #333; 
+    /* Novo: Cor de fundo do cabeçalho, para o menu mobile */
+    --cor-fundo-cabecalho: #693600; 
+    
+}
+
+li{
+    list-style-type: none;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*navbar*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 400px;
+    position: relative; 
+
+}
+.navbar{
+    background-image: linear-gradient(-45deg,#693600,#E69A7A );
+}
+.nav{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: relative; 
+}
+.navbar-conteiner{
+    display: flex;
+    align-content: space-around;
+    justify-content:flex-start;
+}
+.navbar-text{
+    color: var(--cor-texto-hero);
+    font-weight: 800;
+    transition: transform ease-in 300ms;
+}
+.navbar-text:hover{
+    transform: scale(1.2);
+    color: #ffccb7;
+    
+}
+.menu-icon{
+    display: none;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    width: 150px;
+}
+.conteiner{
+display: flex;
+padding-left: -100px;
+}
+/*hero*/
+.hero-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.hero-image{
+    width: 500px;
+    height: fit-content;
+}
+.hero-txt{
+    color: var(--cor-texto-hero);
+    font-size: 30px;
+}
+.hero-btn{
+    background-color: var(--cor-btn-hero);
+    border-radius: var(--btn-radios-hero);
+    color: var(--cor-texto-hero);
+    border: none;
+    font-weight: 700;
+
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 400ms;
+}
+.hero-btn:hover{
+    background-color: #45291e;
+    transform: scale(1.2);
+}
+.hero-div{
+    display:flex;
+    gap: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+    
+}
+/*sobre mim */
+.conteiner-sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 80px;
+}   
+.tl-sobre{
+    color: var(--color-skils);
+}
+.txt-sobre{
+    font-weight: 600;
+}
+.minhas-habilidades{
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Garante que o título e as seções de skills fiquem empilhados */
+    padding: 20px; /* Adicionado para dar um respiro geral */
+}
+.hard-skills{
+    display:flex;
+    flex-direction: column; 
+    align-items: center; /* Centraliza o título "Hard Skills" */
+    margin-bottom: 40px; /* Espaço entre Hard e Soft Skills */
+}
+
+/* Modificação para os boxes de HARD SKILLS */
+.hard-skills ul { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; /* Espaçamento entre os boxes de Hard Skills */
+    padding: 5px;
+}
+
+.bg-hard{
+    background-color: #D9D9D9;
+    width: var(--width-box-hardskils); 
+    height: var(--height-box-hardskils);
+    border-radius: var(--btn-radios-hero);
+    cursor: pointer;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    gap: 10px;
+    transition: transform 0.3s ease; 
+    text-align: center; 
+}
+.bg-hard:hover{
+    transform: scale(1.05);
+}
+/* Ajuste para o texto de nível dentro do bg-hard */
+.bg-hard b {
+    white-space: nowrap; 
+    padding: 0 5px; 
+}
+
+
+.niveis{
+    display: flex;
+    margin-top: 40px; /* Pode remover ou ajustar se o gap for suficiente */
+    font-weight: 600;
+}
+.niveis-2{
+    display: flex;
+    margin-top: 57px; /* Pode remover ou ajustar se o gap for suficiente */
+    font-weight: 600;
+}
+b{
+    font-weight: 600;
+}
+.niveis-1{
+    display: flex;
+    margin-top: 3px; /* Pode remover ou ajustar se o gap for suficiente */
+    font-weight: 600;
+}
+.intermediario{
+    color: var(--color-intermediario);
+}
+.experiente{
+    color: var(--color-experiente);
+}
+.basico{
+    color: var(--color-basico);
+}
+
+/* Seu CSS existente para softskills, com adaptações */
+
+/* Seu CSS existente para softskills, com adaptações */
+
+.softskills {
+    display: flex;
+    flex-direction: column; /* O título e o contêiner das habilidades ficarão um abaixo do outro */
+    align-items: center; /* Centraliza o título e o contêiner de habilidades */
+    justify-content: center;
+    padding: 60px 20px; /* Adicionado padding para respiro, similar a outras seções */
+    width: 100%;
+}
+
+/* Garante que o título das soft skills também seja centralizado */
+.softskills .skills { /* Mudei para .skills para ser mais genérico, já que seu H3 tem essa classe */
+    color: var(--color-skils);
+    margin-bottom: 40px; /* Espaço abaixo do título das soft skills */
+    font-size: 32px; /* Aumentei um pouco o tamanho para mais destaque */
+    text-transform: capitalize; /* Para uniformizar a capitalização, se desejar */
+}
+
+.conteiner-soft ul {
+    display: flex; /* ATIVA O FLEXBOX: alinha os itens horizontalmente */
+    justify-content: center; /* Centraliza as caixas de soft skill no contêiner */
+    flex-wrap: wrap; /* PERMITE QUE AS CAIXAS QUEBREM PARA A PRÓXIMA LINHA */
+    gap: 30px; /* Espaçamento entre as caixas de soft skill */
+    padding: 0; /* Remove padding padrão de UL */
+    list-style: none; /* Remove marcadores de lista */
+    max-width: 900px; /* Limita a largura máxima do contêiner para melhor leitura */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+.bg-soft {
+    background-color: #D9D9D9;
+    width: var(--width-box-softskils); /* Usando as variáveis de tamanho que já definimos */
+    height: var(--height-box-softskils);
+    border-radius: var(--btn-radios-hero);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Conteúdo da caixa empilhado verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    gap: 10px; /* Espaçamento entre a imagem e o texto dentro do box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição para o efeito hover e sombra */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px; /* Adicionado padding interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    /* Garante que as caixas tenham um tamanho base para o wrap */
+    flex-basis: calc(33.333% - 20px); /* Aproximadamente 1/3 da largura, descontando o gap */
+    min-width: 250px; /* Define uma largura mínima para a caixa */
+}
+
+.bg-soft:hover {
+    transform: translateY(-5px); /* Efeito de "levantar" ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais intensa no hover */
+}
+
+.bg-soft img {
+    width: 80px; /* Ajuste o tamanho da imagem da soft skill */
+    height: auto;
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.bg-soft p {
+    font-weight: 600;
+    font-size: 18px; /* Ajuste o tamanho da fonte se necessário */
+    color: var(--color-skils); /* Cor para o texto da soft skill */
+    line-height: 1.3; /* Melhora a leitura */
+}
+
+
+/* --- Responsividade para telas menores (dentro do @media query existente) --- */
+
+@media (max-width: 768px) {
+    /* ... (Mantenha o seu CSS existente para mobile aqui, mas revise os itens abaixo) ... */
+
+    .softskills {
+        padding: 40px 15px; /* Reduz o padding em telas menores */
+    }
+
+    .softskills .skills {
+        font-size: 28px; /* Ajusta o título das soft skills para mobile */
+        margin-bottom: 30px;
+    }
+
+    .conteiner-soft ul {
+        /* Permite que as caixas se adaptem de 2 em 2 ou 1 em 1 */
+        gap: 20px; /* Reduz o espaçamento em mobile */
+        justify-content: center; /* Garante que os itens fiquem centralizados */
+    }
+
+    .bg-soft {
+        /* Ajustado para tentar 2 por linha, mas quebrando para 1 se não couber */
+        width: calc(50% - 15px); /* Tenta 2 caixas por linha, descontando o gap */
+        min-width: 150px; /* Largura mínima para mobile */
+        max-width: 220px; /* Largura máxima para mobile */
+        height: auto; /* Altura automática para se ajustar ao conteúdo */
+        padding: 15px; /* Ajusta o padding interno */
+        flex-basis: auto; /* Redefine o flex-basis para mobile */
+    }
+
+    .bg-soft img {
+        width: 70px; /* Reduz o tamanho da imagem em mobile */
+    }
+
+    .bg-soft p {
+        font-size: 14px; /* Ajusta o tamanho da fonte do texto da soft skill */
+    }
+}
+
+/* Opcional: Se quiser quebra para apenas 1 coluna em telas BEM pequenas */
+@media (max-width: 480px) {
+    .bg-soft {
+        width: 90%; /* Ocupa quase a largura total da tela */
+        min-width: unset; /* Remove min-width para telas muito pequenas */
+        max-width: 300px; /* Ajusta max-width */
+    }
+}
+/* Estilos para o Modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%; 
+    height: auto; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.close { 
+    align-self: flex-end; 
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px; 
+}
+
+.close:hover {
+    color: red;
+}
+
+.modal-close-btn {
+    background-color: var(--cor-btn-hero);
+    color: var(--cor-texto-hero);
+    border: none;
+    border-radius: var(--btn-radios-hero);
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.modal-close-btn:hover {
+    background-color: #45291e;
+}
+
+
+/* ---------------------------------------------------- */
+/* ESTILOS PARA O BOTÃO DE FECHAR DO MENU HAMBÚRGUER */
+/* ---------------------------------------------------- */
+.close-menu-icon {
+    display: none; 
+    font-size: 35px; 
+    color: var(--cor-texto-hero); 
+    position: absolute; 
+    top: 15px; 
+    right: 20px; 
+    cursor: pointer;
+    z-index: 1001; 
+    transition: color 0.3s ease; 
+}
+
+.close-menu-icon:hover {
+    color: #E69A7A; 
+}
+
+
+/* ---------------------------------------------------- */
+/* Ajustes para Mobile (@media query)                  */
+/* ---------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .conteiner .nav {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--cor-fundo-cabecalho); 
+        position: fixed; 
+        top: 0; 
+        left: -100%; 
+        height: 100%; 
+        z-index: 50; 
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        transition: left 0.4s ease-in-out; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 20px; 
+    }
+    
+    .conteiner .nav.active { 
+        display: flex; 
+        left: 0; 
+    }
+
+    .menu-icon {
+        display: flex; 
+        align-items: center; 
+        font-size: 30px;
+        color: var(--cor-texto-hero);
+        cursor: pointer;
+        padding-right: 20px; 
+    }
+
+    .conteiner .nav.active .close-menu-icon {
+        display: block; 
+    }
+
+    .conteiner .nav .navbar { 
+        padding: 10px 0;
+        text-align: center;
+        color: var(--cor-texto-hero);
+        font-size: 20px; 
+        width: 100%; 
+    }
+
+    .conteiner .nav .navbar:hover {
+        background-color: #E69A7A;
+    }
+
+    .logo {
+        width: 120px; 
+        padding-left: 20px; 
+    }
+
+    nav {
+        justify-content: space-between; 
+        padding: 10px 0; 
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero-main {
+        flex-direction: column; 
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-div {
+        gap: 30px; 
+        margin-top: 50px; 
+    }
+
+    .hero-txt {
+        font-size: 24px; 
+        padding: 0 15px; 
+    }
+
+    .hero-btn {
+        width: 160px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .conteiner-sobre {
+        padding: 40px 20px; 
+    }
+
+    .tl-sobre {
+        font-size: 24px; 
+    }
+
+    .txt-sobre {
+        font-size: 15px; 
+        text-align: center; 
+    }
+
+    .minhas-habilidades {
+        padding: 20px;
+    }
+
+    /* MUDANÇAS PARA OS BOXES DE HABILIDADES EM MOBILE */
+    .hard-skills ul, .softskills ul {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 15px; 
+        padding: 0; 
+    }
+
+    .bg-hard {
+        width: 30%; 
+        min-width: 100px; 
+        max-width: 120px; 
+        height: 140px; 
+        padding: 10px; 
+        gap: 5px; 
+    }
+
+    .bg-soft {
+        /* Ajustado para 2 boxes por linha em mobile */
+        width: 45%; 
+        min-width: 150px; 
+        max-width: 200px; 
+        height: 140px; 
+        padding: 10px; 
+        gap: 5px; 
+    }
+
+    .bg-hard img, .bg-soft img {
+        width: 40px; 
+        height: auto;
+    }
+
+    .niveis, .niveis-1, .niveis-2 {
+        margin-top: 0; 
+        font-size: 11px; 
+        line-height: 1.2; 
+    }
+    .bg-hard b, .bg-soft p, .softskills b { /* Aplica no texto do nível e na descrição soft skill */
+        font-size: 11px; 
+        white-space: normal; 
+        word-break: break-word; 
+    }
+
+
+    .coniteiner-alinhamento {
+        padding: 20px;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .modal-content {
+        width: 90%; 
+        margin: 10% auto; 
+        padding: 15px;
+    }
+
+    .modal-title {
+        font-size: 20px;
+    }
+
+    .modal-description {
+        font-size: 14px;
+    }
+
+    .modal-close-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}

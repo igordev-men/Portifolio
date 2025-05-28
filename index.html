@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portifolio</title>
+</head>
+<body>
+    <section class="navbar">
+        <div class="navbar-conteiner">
+            <nav>
+                <img src="galeria/logo.png" alt="logo" class="logo">
+
+                <div class="menu-icon" id="menu-icon">&#9776;</div> 
+
+                <div class="nav" id="mobile-nav"> 
+                    <span class="close-menu-icon" id="close-menu-icon">&times;</span> 
+                    <a href="#sobre" class="navbar-text">
+                        Sobre mim
+                    </a>
+                    <a href="#" class="navbar-text">
+                        Meus projetos
+                    </a>
+                    <a href="#" class="navbar-text">
+                        Contato
+                    </a>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="hero-main">
+            <div class="hero-div">
+                <h2 class="hero-txt">
+                    Olá esse é o meu portfólio, de uma olhada 
+                    <br>
+                    sobre mim e nos meus projetos!  
+                </h2>
+                <button class="hero-btn">
+                    eu quero saber mais 
+                </button>
+            </div>
+            <img src="galeria/avatar.png" alt="avatar" class="hero-image">
+        </div>
+    </section> 
+    <section id="sobre" class="sobre-mim">
+        <main class="main-sobre">
+            <div class="conteiner-sobre">
+                <h2 class="tl-sobre">
+                    sobre mim
+                </h2>
+                <p class="txt-sobre">
+                    Sou Igor, 19 anos, e minha paixão por computadores me levou à programação. Desde então, tenho praticado Java script e UX através de projetos pessoais e pelas aulas da Ebac.
+                    <br>
+                    Busco uma oportunidade como desenvolvedor júnior para aplicar meu aprendizado e crescer na área. (vale ressaltar que eu fiz do zero o design e UX do site)
+                </p>
+            </div>
+            <div class="minhas-habilidades">
+                <h2 class="tl-sobre">
+                    Minhas habilidades
+                </h2>
+                <div class="hard-skills">
+                    <h3 class="skills">
+                        Hard Skils:
+                    </h3>
+                    <ul>
+                        <li>
+                            <div class="bg-hard" data-desc="Linguagem de marcação usada para estruturar o conteúdo da web.">
+                                <img src="galeria/html.png" alt="HTML">
+                                <p class="niveis-1">Nivel: <b class="experiente">experiente</b></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bg-hard" data-desc="Linguagem de estilos utilizada para criar layouts e designs atrativos.">
+                                <img src="galeria/css.png" alt="CSS">
+                                <p class="niveis-1">Nivel: <b class="experiente">experiente</b></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bg-hard" data-desc="Linguagem de programação utilizada para adicionar interatividade às páginas.">
+                                <img src="galeria/javaScript.png" alt="JavaScript" class="img-hard">
+                                <p class="niveis">Nivel: <b class="experiente">experiente</b></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bg-hard" data-desc="Framework React que permite criar aplicações web modernas com renderização do lado do servidor.">
+                                <img src="galeria/next.png" alt="Next.js" class="img-hard">
+                                <p class="niveis-2">Nivel: <b class="intermediario">intermediario</b></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bg-hard" data-desc="Sistema de controle de versões amplamente utilizado para gerenciar projetos de software.">
+                                <img src="galeria/git.png" alt="Git" class="img-hard">
+                                <p class="niveis">Nivel: <b class="basico">basico</b></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bg-hard" data-desc="Plataforma de hospedagem de código e colaboração com recursos como repositórios e issues.">
+                                <img src="galeria/github.png" alt="GitHub" class="img-hard">
+                                <p class="niveis-2">Nivel: <b class="basico">basico</b></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                
+            <div class="softskills">
+    <h3 class="skills">
+        Soft Skills:
+    </h3>
+    <div class="conteiner-soft">
+        <ul>
+            <li>
+                <div class="bg-soft">
+                    <img src="galeria/comunicaçao.png" alt="Comunicação">
+                    <p class="niveis-1">
+                        Comunicação
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="bg-soft">
+                    <img src="galeria/estudos.png" alt="Aprendizado Rápido">
+                    <p class="niveis-1">
+                        Aprendizado rápido
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="bg-soft">
+                    <img src="galeria/trabalho-em-equipe.png" alt="Trabalho em Equipe" class="img-hard">
+                    <p class="niveis-1">
+                        Trabalho em equipe
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+        </main>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <button class="modal-close-btn">Fechar</button> </div>
+        </div>
+    </section> 
+</body>
+</html>
+
+<script src="main.js"></script>
